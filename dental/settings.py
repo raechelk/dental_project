@@ -15,7 +15,7 @@ import os
 
 
 from django.contrib import staticfiles
-
+from django.templatetags import static
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3z_@i=if9x^81#s!(!sjuk44lma!vpk969_2j+16iv03s=)*pd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["dental-project-k87j.onrender.com",
                  ".onrender.com",

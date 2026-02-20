@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{%  load static %}
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Hertwig's Epithelial Root Sheath & Root Formation</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    color:white;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h1,h2,h3{
+    text-align:center;
+    text-shadow:2px 2px 6px black;
+}
+
+h1{font-size:38px;margin-bottom:20px;}
+h2{font-size:28px;margin-top:40px;}
+h3{font-size:22px;margin-top:25px;}
+
+p,li{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.section{
+    margin-top:40px;
+    padding:25px;
+    background:rgba(0,0,0,0.3);
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+img, video{
+    display:block;
+    margin:25px auto;
+    max-width:80%;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.collapsible{
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+    padding:12px;
+    border:none;
+    width:100%;
+    text-align:left;
+    font-size:18px;
+    margin-top:15px;
+    border-radius:8px;
+}
+
+.content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease;
+    background:rgba(255,255,255,0.1);
+    padding:0 15px;
+    border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+ <audio autoplay loop>
+    <source src="{%static 'music/music 2.mp3' %} " type="audio/mpeg">
+</audio>
+
+
+<div class="container">
+
+<h1>Hertwig's Epithelial Root Sheath (HERS)</h1>
+
+<div class="section">
+
+<h2>Introduction</h2>
+<p>
+Hertwig’s Epithelial Root Sheath (HERS) is a bilayered epithelial structure
+derived from the cervical loop of the enamel organ during tooth development.
+It plays a crucial role in determining the shape, length, and number of roots
+and in initiating root dentin formation.
+</p>
+
+<h2>Origin of HERS</h2>
+<ul>
+<li>Formed from the cervical loop of the enamel organ.</li>
+<li>Composed of Inner Enamel Epithelium (IEE) and Outer Enamel Epithelium (OEE).</li>
+<li>Does NOT contain stellate reticulum or stratum intermedium.</li>
+</ul>
+
+<h2>Structure of HERS</h2>
+<ul>
+<li>Double epithelial layer.</li>
+<li>Extends apically like a sheath around dental papilla.</li>
+<li>Forms the epithelial diaphragm at the future root apex.</li>
+</ul>
+
+<img src="../static/images/SHEATH.jpg" alt="EPITHELIAL ROOT SHEATH">
+
+<h2>Functions of HERS</h2>
+<ul>
+<li>Determines root morphology (shape & number).</li>
+<li>Induces differentiation of dental papilla cells into odontoblasts.</li>
+<li>Guides root dentin formation.</li>
+<li>Controls root elongation.</li>
+</ul>
+
+<h2>Steps in Root Formation</h2>
+
+<ol>
+<li><b>Proliferation of HERS:</b> Grows downward from cervical loop.</li>
+<li><b>Induction:</b> Dental papilla cells differentiate into odontoblasts.</li>
+<li><b>Root Dentin Formation:</b> Odontoblasts deposit root dentin matrix.</li>
+<li><b>Disintegration of HERS:</b> Sheath fragments after dentin formation begins.</li>
+<li><b>Cementum Formation:</b> Dental follicle cells differentiate into cementoblasts and form cementum.</li>
+<li><b>Periodontal Ligament Formation:</b> PDL fibers develop between cementum and alveolar bone.</li>
+</ol>
+
+<img src="../static/images/root.jpg" alt="Root Formation Process Diagram">
+
+<h2>Root Morphology</h2>
+<ul>
+<li>Single-rooted teeth → Continuous cylindrical HERS.</li>
+<li>Multi-rooted teeth → HERS forms horizontal extensions (epithelial diaphragm).</li>
+<li>Apical foramen remains for nerve and blood vessel entry.</li>
+</ul>
+
+<h2>Clinical Significance</h2>
+<ul>
+<li>Defective HERS → Short roots or abnormal root curvature.</li>
+<li>Remnants persist as Epithelial Rests of Malassez.</li>
+<li>Can lead to radicular cyst formation.</li>
+<li>Important in regenerative endodontics.</li>
+</ul>
+
+<button class="collapsible">Did You Know?</button>
+<div class="content">
+<p>
+HERS determines whether a tooth will have one root or multiple roots
+by forming epithelial diaphragm projections during development.
+</p>
+</div>
+
+<button class="collapsible">Advanced Fact</button>
+<div class="content">
+<p>
+Epithelial rests of Malassez remain in the periodontal ligament throughout life
+and may participate in periodontal repair or cyst formation.
+</p>
+</div>
+
+<h2>Watch HERS & Root Formation Animation</h2>
+
+<video controls autoplay muted loop>
+<source src="{% static 'video/short.mp4' %}" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+     <a href="{% url 'thank' %}"> <button> GO to next Page</button>
+   </a>
+
+</div>
+</div>
+
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    for(let i=0; i<coll.length; i++){
+coll[i].addEventListener("click",function(){
+    const content = this.nextElementSibling;
+    if(content.style.maxHeight){
+content.style.maxHeight=null;
+}else{
+content.style.maxHeight=content.scrollHeight+"px";
+}
+});
+}
+
+
+gsap.from("h1",{opacity:0,y:-40,duration:1});
+gsap.from(".section",{opacity:0,y:40,duration:1});
+</script>
+
+</body>
+</html>

@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="631adcaa-9461-4d36-89e6-8d49afc2ca76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Dental.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dental/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/SHEATH.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/ai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/dentist.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/root.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/images/teeth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/music/doc.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/music/music 2.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/video/short.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/static/video/teethfootage.webm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/thank.html" afterDir="false" />
-    </list>
+    <list default="true" id="631adcaa-9461-4d36-89e6-8d49afc2ca76" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771570014759</updated>
       <workItem from="1771570015795" duration="8099000" />
-      <workItem from="1771584479762" duration="7780000" />
+      <workItem from="1771584479762" duration="8391000" />
     </task>
     <servers />
   </component>

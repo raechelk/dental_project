@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thank You</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4caf50, #ffffff);
+            overflow: hidden;
+        }
+
+        .box {
+            text-align: center;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            color: #2e7d32;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1b5e20;
+            transform: scale(1.05);
+        }
+
+        /* Floating Animation */
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: float 5s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-25px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="{% static 'music/doc.mp3'%}" type="audio/mpeg">
+</audio>
+
+<div class="heart" style="top:15%; left:20%;">🦷</div>
+<div class="heart" style="top:75%; left:70%;">✨</div>
+
+<div class="box">
+    <h1>Thank You!</h1>
+    <p>
+        Thank you for viewing my Dental Development Project.<br>
+        I hope you found the explanation of<br>
+        <b>Hertwig’s Epithelial Root Sheath, Root Formation, and Tooth Eruption</b><br>
+        informative and useful.
+    </p>
+
+    <a href="{% url 'home' %}"class="btn">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>

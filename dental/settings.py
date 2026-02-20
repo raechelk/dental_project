@@ -30,10 +30,10 @@ SECRET_KEY = 'django-insecure-3z_@i=if9x^81#s!(!sjuk44lma!vpk969_2j+16iv03s=)*pd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dental-bkym.onrender.com'
+ALLOWED_HOSTS = ['dental-project-k87j.onrender.com'
                  '.onrender.com',
                  'localhost',
-                 '127.0.0.1',
+                 '127.0.0.1'
                  ]
 
 
